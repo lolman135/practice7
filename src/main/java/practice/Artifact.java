@@ -4,7 +4,7 @@ public class Artifact extends Item{
     private final String type;
     private final String artifactName;
 
-    public Artifact(String type, double weight, double price, String artifactName) {
+    public Artifact(String type, String artifactName, double weight, double price) {
         super(weight, price);
         this.type = type;
         this.artifactName = artifactName;
@@ -13,8 +13,8 @@ public class Artifact extends Item{
     @Override
     public String toString() {
         return "Artifact{" +
-                "type=" + type +
-                ", artifactName=" + artifactName +
+                "type:" + type +
+                ", artifactName:" + artifactName +
                 super.toString() +
                 '}';
     }

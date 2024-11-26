@@ -104,4 +104,17 @@ public class Player {
     public void takeDamage(int hp){
         health -= hp;
     }
+
+    public PlayerMemento save(){
+        return new PlayerMemento(nickname, health, maxHealth, positionX, positionY, inventory);
+    }
+
+    public void restore(PlayerMemento memento){
+        nickname = memento.getNickname();
+        health = memento.getHealth();
+        maxHealth = memento.getMaxHealth();
+        positionX = memento.getPositionX();
+        positionY = memento.getPositionY();
+        inventory = memento.getInventory();
+    }
 }
