@@ -1,7 +1,14 @@
 package practice;
 
+/**
+ * {@code Main} class that demonstrates work of pattern;
+ * @author Kyrylo Kusovslyi
+ */
 public class Main {
-
+    /**
+     * main method
+     * @param args starter arguments for program
+     */
     public static void main(String[] args) {
         Player player = new Player("lolman", 100,0, 10);
         Weapon sword = new Weapon("sword", 10.4, 100, 9);
