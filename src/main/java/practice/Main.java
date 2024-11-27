@@ -20,7 +20,6 @@ public class Main {
 
         savesHistory.createSave(player.save());
 
-
         player.heal(13);
         player.setPositionX(player.getPositionX() + 10);
         player.deleteItem(sword);
